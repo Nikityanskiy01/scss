@@ -1,0 +1,21 @@
+$columns: 12;
+$gutter-width: 20px;
+$bound: 1200px;
+
+.container {
+  max-width: $bound;
+  margin: 0 auto;
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-gap: $gutter-width;
+
+    @for $i from 1 to $columns + 1 {
+      .col-#{$i} {
+        grid-column: span $i / span $i;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект нанобиблиотеки SCSS Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="layout">
+        <header>
+            <span>
+                Пример шапки
+            </span>
+            <nav>
+                <span>
+                    Пример навигации
+                </span>
+            </nav>
+        </header>
+        <main>
+            Пример мэйна
+            <section><span>Пример секции</span></section>
+        </main>
+        <footer>Пример подвала</footer>
+    </div>
+    <h1>Заголовок 1 уровня</h1>
+    <h2>Заголовок 2 уровня</h2>
+    <h3>Заголовок 3 уровня</h3>
+    <h4>Заголовок 4 уровня</h4>
+    <p>Пример скрывающегося элемента ⇓ (кликнуть)</p>
+    <p class="hidden-element">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, doloremque
+        delectus? Ipsum itaque dicta at sint commodi ratione, fugiat ipsam enim aliquam iste optio maxime sapiente
+        similique? Mollitia, numquam repellendus! Assumenda, quidem! Doloribus dicta soluta dolores ipsum distinctio
+        veritatis eius enim consectetur atque quos hic debitis facilis provident, nemo ex animi id beatae. Cumque,
+        amet?</p>
+    <div class="wrapper">
+        <ol>
+            <li>Пункт нумерованного списка</li>
+            <li>Пункт нумерованного списка</li>
+            <li>Пункт нумерованного списка</li>
+        </ol>
+        <ul>
+            <li>Пункт ненумерованного списка</li>
+            <li>Пункт ненумерованного списка</li>
+            <li>Пункт ненумерованного списка</li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <a href="#">Пример ссылки</a>
+        <button>Пример кнопки</button>
+    </div>
+
+    <div class="container-demo">
+        <h4>Пример использования grid сетки</h4>
+        <div class="col-12">
+            <span>
+                Я занимаю все 12 колонок
+            </span>
+        </div>
+        <div class="col-9">
+            <span>
+                Я занимаю 9 колонок
+            </span>
+        </div>
+        <div class="col-6">
+            <span>
+                Я занимаю 6 колонок
+            </span>
+        </div>
+        <div class="col-4">
+            <span>
+                Я занимаю 4 колонки
+            </span>
+        </div>
+        <div class="col-3">
+            <span>
+                Я занимаю 3 колонки
+            </span>
+        </div>
+        <div class="col-2">
+            <span>
+                Я занимаю 2 колонки
+            </span>
+        </div>
+    </div>
+
+    <script>
+        let hide = document.querySelector('.hidden-element')
+
+        hide.onclick = function () {
+            hide.classList.toggle('visually-hidden')
+            alert('Элемент скрыт!')
+        }
+    </script>
+</body>
+
+</html>

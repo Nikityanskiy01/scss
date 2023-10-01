@@ -1,0 +1,14 @@
+@mixin font-face($family, $weight, $style) {
+    @font-face {
+      font-family: #{$family};
+      font-weight: $weight;
+      font-style: $style;
+      src: url('../font/Roboto-Regular.eot')('embedded-opentype'), /* IE6-IE8 */
+           url('../font/Roboto-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+           url('../font/Roboto-Regular.woff') format('woff'), /* Modern Browsers */
+           url('../font/Roboto-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+           url('../font/Roboto-Regular.svg') format('svg'); /* Legacy iOS */
+    }
+  }
+
+  

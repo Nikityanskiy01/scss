@@ -1,0 +1,18 @@
+// карта цветов
+$color-map: (
+  "primary": #1e1f2f,
+  "secondary": #3f2b56,
+  "secondaryLight": #6c3483,
+  "sectionBg": #ae5ada,
+  "sectionBgLight": #f368e0,
+);
+
+// функция возврата цвета по ключу
+@function get-color($key) {
+  @return map-get($color-map, $key);
+}
+
+// Миксин градиента для кнопок
+@mixin gradient-btn($from, $to) {
+  background: linear-gradient(to bottom, $from, $to);
+}
